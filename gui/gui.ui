@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>703</width>
+    <height>476</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>703</width>
+    <height>476</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>703</width>
+    <height>476</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>PMD Sky Randomizer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab1">
+         <attribute name="title">
+          <string>Dungeon data</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="1" alignment="Qt::AlignLeft">
+           <widget class="QCheckBox" name="pokemon_density">
+            <property name="text">
+             <string>Pokemon density     </string>
+            </property>
+            <property name="tristate">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3" alignment="Qt::AlignLeft">
+           <widget class="QSpinBox" name="spinBoxTrapDensity">
+            <property name="maximum">
+             <number>50</number>
+            </property>
+            <property name="value">
+             <number>10</number>
+            </property>
+           </widget>
+          </item>
+          <item row="18" column="0">
+           <widget class="QCheckBox" name="kecleon_percentage">
+            <property name="text">
+             <string>Kecleon shop percentage</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QCheckBox" name="trap_spawns">
+            <property name="text">
+             <string>Trap spawns</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="21" column="1" alignment="Qt::AlignLeft">
+           <widget class="QSpinBox" name="spinBoxHiddenStairs">
+            <property name="suffix">
+             <string>%</string>
+            </property>
+            <property name="maximum">
+             <number>100</number>
+            </property>
+            <property name="singleStep">
+             <number>10</number>
+            </property>
+            <property name="value">
+             <number>10</number>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3" alignment="Qt::AlignLeft">
+           <widget class="QSpinBox" name="spinBoxPokemonDensity">
+            <property name="maximum">
+             <number>50</number>
+            </property>
+            <property name="value">
+             <number>10</number>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1" alignment="Qt::AlignLeft">
+           <widget class="QCheckBox" name="hallway_density">
+            <property name="text">
+             <string>Hallway density       </string>
+            </property>
+           </widget>
+          </item>
+          <item row="12" column="0">
+           <widget class="QCheckBox" name="weather">
+            <property name="text">
+             <string>Weather</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" alignment="Qt::AlignLeft">
+           <widget class="QCheckBox" name="trap_density">
+            <property name="text">
+             <string>Trap density           </string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QCheckBox" name="hallway_length">
+            <property name="text">
+             <string>Hallway length</string>
+            </property>
+           </widget>
+          </item>
+          <item row="21" column="0">
+           <widget class="QCheckBox" name="hidden_stairs">
+            <property name="text">
+             <string>Hidden stairs percentage</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0">
+           <widget class="QCheckBox" name="music">
+            <property name="text">
+             <string>Music</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="pokemon_spawns">
+            <property name="text">
+             <string>Pokemon spawns</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="0">
+           <widget class="QCheckBox" name="darkness">
+            <property name="text">
+             <string>Darkness</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1" alignment="Qt::AlignLeft">
+           <widget class="QCheckBox" name="water_density">
+            <property name="text">
+             <string>Water/Lava density</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3" alignment="Qt::AlignLeft">
+           <widget class="QSpinBox" name="spinBoxItemDensity">
+            <property name="maximum">
+             <number>50</number>
+            </property>
+            <property name="value">
+             <number>10</number>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QCheckBox" name="floor_structure">
+            <property name="text">
+             <string>Floor structure</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QCheckBox" name="terrain_appearance">
+            <property name="text">
+             <string>Terrain appearance</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="3" alignment="Qt::AlignLeft">
+           <widget class="QSpinBox" name="spinBoxWaterDensity">
+            <property name="maximum">
+             <number>50</number>
+            </property>
+            <property name="value">
+             <number>10</number>
+            </property>
+           </widget>
+          </item>
+          <item row="20" column="0">
+           <widget class="QCheckBox" name="water_percentage">
+            <property name="text">
+             <string>Water/Lava room percentage</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="item_spawns">
+            <property name="text">
+             <string>Item spawns</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QCheckBox" name="water">
+            <property name="text">
+             <string>Water/Lava</string>
+            </property>
+           </widget>
+          </item>
+          <item row="11" column="0">
+           <widget class="QCheckBox" name="enemy_iq">
+            <property name="text">
+             <string>Enemy IQ</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" alignment="Qt::AlignLeft">
+           <widget class="QCheckBox" name="item_density">
+            <property name="text">
+             <string>Item density           </string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="3" alignment="Qt::AlignLeft">
+           <widget class="QSpinBox" name="spinBoxHallwayDensity">
+            <property name="maximum">
+             <number>50</number>
+            </property>
+            <property name="value">
+             <number>10</number>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3" alignment="Qt::AlignLeft">
+           <widget class="QSpinBox" name="spinBoxRoomDensity">
+            <property name="maximum">
+             <number>50</number>
+            </property>
+            <property name="value">
+             <number>10</number>
+            </property>
+           </widget>
+          </item>
+          <item row="19" column="0">
+           <widget class="QCheckBox" name="monster_house">
+            <property name="text">
+             <string>Monster house percentage</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1" alignment="Qt::AlignLeft">
+           <widget class="QCheckBox" name="room_density">
+            <property name="text">
+             <string>Room density          </string>
+            </property>
+           </widget>
+          </item>
+          <item row="20" column="1" alignment="Qt::AlignLeft">
+           <widget class="QSpinBox" name="spinBoxWaterRoom">
+            <property name="suffix">
+             <string>%</string>
+            </property>
+            <property name="maximum">
+             <number>100</number>
+            </property>
+            <property name="singleStep">
+             <number>10</number>
+            </property>
+            <property name="value">
+             <number>10</number>
+            </property>
+           </widget>
+          </item>
+          <item row="19" column="1" alignment="Qt::AlignLeft">
+           <widget class="QSpinBox" name="spinBoxMonsterHouse">
+            <property name="suffix">
+             <string>%</string>
+            </property>
+            <property name="maximum">
+             <number>100</number>
+            </property>
+            <property name="singleStep">
+             <number>10</number>
+            </property>
+            <property name="value">
+             <number>10</number>
+            </property>
+           </widget>
+          </item>
+          <item row="18" column="1" alignment="Qt::AlignLeft">
+           <widget class="QSpinBox" name="spinBoxKecleonShop">
+            <property name="suffix">
+             <string>%</string>
+            </property>
+            <property name="maximum">
+             <number>100</number>
+            </property>
+            <property name="singleStep">
+             <number>10</number>
+            </property>
+            <property name="value">
+             <number>10</number>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2" alignment="Qt::AlignRight">
+           <widget class="QCheckBox" name="setPokemon">
+            <property name="text">
+             <string>Set density:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2" alignment="Qt::AlignRight">
+           <widget class="QCheckBox" name="setItem">
+            <property name="text">
+             <string>Set density:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2" alignment="Qt::AlignRight">
+           <widget class="QCheckBox" name="setTrap">
+            <property name="text">
+             <string>Set density:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2" alignment="Qt::AlignRight">
+           <widget class="QCheckBox" name="setRoom">
+            <property name="text">
+             <string>Set density:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2" alignment="Qt::AlignRight">
+           <widget class="QCheckBox" name="setHallway">
+            <property name="text">
+             <string>Set density:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2" alignment="Qt::AlignRight">
+           <widget class="QCheckBox" name="setWater">
+            <property name="text">
+             <string>Set density:</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab2">
+         <attribute name="title">
+          <string>Pokemon data</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="2" alignment="Qt::AlignLeft">
+           <widget class="QSpinBox" name="spinBoxTypes">
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="suffix">
+             <string>%</string>
+            </property>
+            <property name="maximum">
+             <number>100</number>
+            </property>
+            <property name="singleStep">
+             <number>10</number>
+            </property>
+            <property name="value">
+             <number>50</number>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="type">
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>Type</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QCheckBox" name="iq_group">
+            <property name="text">
+             <string>IQ Group</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2" alignment="Qt::AlignLeft">
+           <widget class="QSpinBox" name="spinBoxAbilities">
+            <property name="suffix">
+             <string>%</string>
+            </property>
+            <property name="maximum">
+             <number>100</number>
+            </property>
+            <property name="singleStep">
+             <number>10</number>
+            </property>
+            <property name="value">
+             <number>50</number>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="label1">
+            <property name="text">
+             <string>Second type chance:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" alignment="Qt::AlignRight">
+           <widget class="QLabel" name="label2">
+            <property name="text">
+             <string>Second ability chance:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="abilities">
+            <property name="text">
+             <string>Abilities</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QCheckBox" name="moveset">
+            <property name="text">
+             <string>Moveset</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QCheckBox" name="mobility">
+            <property name="text">
+             <string>Terrain mobility</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab3">
+         <attribute name="title">
+          <string>Other data</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="body_size">
+            <property name="text">
+             <string>All Pokemon: body size 1*</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" alignment="Qt::AlignRight">
+           <widget class="QCheckBox" name="recruit_rate">
+            <property name="text">
+             <string>All Pokemon: recruit rate</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="player_starters">
+            <property name="text">
+             <string>Randomize players</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2" alignment="Qt::AlignLeft">
+           <widget class="QSpinBox" name="spinBoxRecruit">
+            <property name="suffix">
+             <string>%</string>
+            </property>
+            <property name="prefix">
+             <string/>
+            </property>
+            <property name="maximum">
+             <number>100</number>
+            </property>
+            <property name="value">
+             <number>10</number>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" alignment="Qt::AlignRight">
+           <widget class="QCheckBox" name="partner_starters">
+            <property name="text">
+             <string>Randomize partners       </string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QCheckBox" name="portraits">
+            <property name="text">
+             <string>Fix portraits</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QCheckBox" name="legendary">
+            <property name="text">
+             <string>Legendary Pokemon can spawn!</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QPushButton" name="randomize">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Randomize</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="progressBar">
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>703</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
